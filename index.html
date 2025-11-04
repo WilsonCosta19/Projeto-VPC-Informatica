@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VPC Informática</title>
+  <!-- Link CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,6 +17,7 @@
         <img class="logo-vpc" src="assets/vpglogo1.png" alt="Logo VPC Informática">
       </a>
       <nav class="nav-menu">
+        <a href="#inicio">Inicio</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
@@ -25,7 +27,7 @@
 
   <main>
     <!-- Hero / Bem-vindo -->
-    <section class="bem-vindo container">
+    <section id="inicio" class="bem-vindo container">
       <div class="texto-bem-vindo">
         <h1>Bem-vindo à <br> VPC Informática</h1>
         <p>
@@ -34,7 +36,10 @@
           Conte com nossa assistência técnica especializada – avaliação gratuita e soluções completas.
         </p>
         <button class="button-orcamento" aria-label="Solicitar orçamento">
-          Solicite um orçamento
+          <a class="button-orcamento" href="http://api.whatsapp.com/send?phone=5531994768274" target="_blank"
+            whitespace--normal>
+            Solicite seu orçamento
+          </a>
         </button>
       </div>
       <img class="img-v2" src="assets/v2.png" alt="Imagem da loja VPC Informática">
@@ -48,7 +53,7 @@
         fundada em 2012 em Belo Horizonte - Minas Gerais.
         Oferecemos excelência, eficiência e qualidade, com transparência e dedicação.
         Atuamos tanto com clientes residenciais quanto empresariais,
-        aplicando metodologias ágeis e preços justos para solucionar todos os problemas.
+        aplicando metodologias ágegeis e preços justos para solucionar todos os problemas.
       </p>
     </section>
 
@@ -84,33 +89,89 @@
     </section>
   </main>
 
+  <!-- Depoimentos -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <h2>O que nossos clientes dizem</h2>
+
+      <div class="depoimentos-cards">
+
+        <div class="depoimento">
+          <p>"Excelente atendimento e rapidez no conserto do meu notebook! Recomendo muito a VPC Informática."</p>
+          <h4> Ana Paula, Belo Horizonte</h4>
+        </div>
+
+        <div class="depoimento">
+          <p>"Serviço de alta qualidade e profissionais super atenciosos. Resolveram meu problema em poucas horas!"</p>
+          <h4> Carlos Eduardo, Contagem</h4>
+        </div>
+
+        <div class="depoimento">
+          <p>"Já sou cliente há anos, sempre com ótimo suporte e preços justos. Empresa de confiança!"</p>
+          <h4> Juliana Santos, Betim</h4>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- Rodapé -->
-  <footer id="contato" class="footer-container">
-    <div class="container footer-content">
-      <div class="footer-info">
-        <h3>Contato</h3>
-        <img src="assets/loja.webp" alt="imagemdaloja">
-        <ul>
-          <li><a href="tel:+552199999999">+55 21 9999-9999</a></li>
-          <li><a href="mailto:contato@vpc.com">contato@vpc.com</a></li>
-          <li>Rua Ali Perto, 42 - Botafogo</li>
-          <li>Rio de Janeiro - RJ</li>
-        </ul>
-        <div class="footer-redes">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src="./img/redes/youtube.svg" width="32" height="32" alt="YouTube">
-          </a>
+  <footer>
+    <div class="footer-content container">
+      <div class="container-loc">
+
+        <!-- Contato -->
+        <div class="footer-info">
+          <h3>Contato</h3>
+          <ul>
+            <li>📞 (11) 99999-9999</li>
+            <li>📧 contato@vpcinformatica.com</li>
+            <li>📍 Rua Terezinha Magalhães de Jesus, 31 - Loja-A - Jaqueline, Belo Horizonte - MG, 31748-108, Brasil
+            </li>
+          </ul>
+        </div>
+
+        <!-- Links úteis -->
+        <div class="footer-info">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="footer-info">
+          <h3>Siga-nos</h3>
+          <div class="footer-redes">
+            <a href="https://pt-br.facebook.com/VpcInformaticaltda/" target="_blank">Facebook</a></Facebook>
+            <a href="https://www.instagram.com/vpcinformatica/" target="_blank">Instagram</a></Instagram>
+            <a href="https://www.youtube.com/channel/UCRxYaaLZ9LAOa0INQG8OeLQ" target="_blank">Youtube</a>
+            <Youtube>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="containermapa">
         </div>
       </div>
-      <p>&copy; 2023 Assistência Técnica de Computadores</p>
     </div>
+    <div class="footer-mapa">
+      <h2>Localização</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d480498.8280597194!2d-43.942820000000005!3d-19.80196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6857deebc96ad%3A0x7923b91379eb1559!2sVPC%20Inform%C3%A1tica%20Ltda!5e0!3m2!1spt-BR!2sus!4v1762197391470!5m2!1spt-BR!2sus"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <p class="footer-copy">© 2025 Sua Empresa. Todos os direitos reservados.</p>
   </footer>
+
+
+  <!-- Link do JS -->
+  <script src="script.js"></script>
 </body>
 
 </html>
